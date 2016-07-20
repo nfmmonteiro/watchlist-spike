@@ -1,0 +1,50 @@
+{
+  "name": "watchlist-spike",
+  "version": "1.0.0",
+  "description": "[SPIKE] Add to watchlist landing page (Mobile first)",
+  "scripts": {
+    "typings-install": "typings install",
+    "postinstall": "npm run typings-install",
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000 --host watch.localhost.nowtv.bskyb.com --content-base src",
+    "start": "npm run server"
+  },
+  "contributors": [
+    "Nuno Monteiro <nfmmonteiro@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "watchlist-spike"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfmmonteiro/watchlist-spike.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nfmmonteiro/watchlist-spike/issues"
+  },
+  "homepage": "https://github.com/nfmmonteiro/watchlist-spike.git#readme",
+  "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
+    "css-loader": "^0.23.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.4",
+    "@angular/compiler": "^2.0.0-rc.4",
+    "@angular/core": "^2.0.0-rc.4",
+    "@angular/platform-browser": "^2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.4",
+    "core-js": "^2.4.1",
+    "ie-shim": "^0.1.0",
+    "rxjs": "^5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  }
+}
